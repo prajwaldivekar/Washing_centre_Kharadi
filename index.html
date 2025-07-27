@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +15,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f5f5f5;
-        }
+   body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43, #2c5364);
+    background-size: 800% 800%;
+    animation: deepFlow 20s ease infinite;
+    color: white; /* Optional: Makes text readable on darker background */
+    min-height: 100vh;
+}
+
+@keyframes deepFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+
+
 
         .hero {
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1602491674022-07c1f0a35a2f') center/cover;
@@ -38,10 +53,15 @@
             padding: 20px 0;
         }
 
+
+
         .feature-icon {
             font-size: 2rem;
             color: #0d6efd;
         }
+    .text{
+        color: #000;
+    }
     </style>
 
     <!-- Social Media Icons -->
@@ -107,6 +127,7 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -129,7 +150,7 @@
 
     <!-- Hero Section -->
     <section class="hero"
-        style="background: url('wp2913560.webp') center center/cover no-repeat; padding: 100px 0; color: rgb(41, 41, 41); text-align: center;">
+        style="background: url('wp2913560.webp') center center/cover no-repeat; padding: 100px 0; color: rgb(250, 247, 247); text-align: center;">
         <div class="container">
             <h1 class="display-4 fw-bold">Welcome to Name</h1>
             <p class="lead">Premium Car Washing Services in kharadi</p>
@@ -178,11 +199,11 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-5 bg-light" id="features">
+    <section class="py-5 bg-light text" id="features">
         <div class="container">
             <h2 class="text-center mb-4">Why Choose ShinyClean?</h2>
             <div class="row text-center">
-                <div class="col-md-3">
+                <div class="col-md-3 ">
                     <i class="fas fa-recycle feature-icon"></i>
                     <h5 class="mt-2">Eco-Friendly</h5>
                     <p>We use water-saving techniques and biodegradable solutions.</p>
@@ -209,7 +230,7 @@
     <!-- Pricing -->
     <section class="bg-white py-5" id="pricing">
         <div class="container">
-            <h2 class="text-center mb-4">Pricing Plans</h2>
+            <h2 class="text-center mb-4 text" >Pricing Plans</h2>
             <div class="row justify-content-center g-4">
                 <div class="col-md-4">
                     <div class="card text-center h-100">
@@ -236,7 +257,7 @@
     <!-- Gallery -->
     <section class="py-5 bg-light" id="gallery">
         <div class="container">
-            <h2 class="text-center mb-4">Our Work</h2>
+            <h2 class="text-center mb-4 text">Our Work</h2>
             <div class="row g-3">
                 <div class="col-md-4">
                     <img src="/img/img1.webp" class="img-fluid rounded w-100" style="height: 250px; object-fit: cover;"
@@ -257,7 +278,7 @@
     <!-- Google Map Section -->
     <section class="py-5 bg-light" id="location">
         <div class="container mb-5">
-            <h2 class="text-center mb-3">📍 Find Us on the Map</h2>
+            <h2 class="text-center mb-3 text">📍 Find Us on the Map</h2>
             <p class="text-center mb-4">Visit our ShinyClean Car Wash Center at Kharadi, Pune. Conveniently located for
                 a quick and quality wash!</p>
             <div class="mb-3 mx-auto" style="max-width: 600px;">
@@ -321,8 +342,8 @@
             <a href="https://wa.me/917499757100" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
             <a href="https://facebook.com/yourpage" target="_blank" class="facebook"><i
                     class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/prajwal_divekar_1010?igsh=MWIxNWtlMG1mN29yMQ==" target="_blank" class="instagram"><i
-                    class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/prajwal_divekar_1010?igsh=MWIxNWtlMG1mN29yMQ==" target="_blank"
+                class="instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </section>
 
