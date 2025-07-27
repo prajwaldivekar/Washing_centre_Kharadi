@@ -15,12 +15,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
     <style>
-   body {
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(-45deg,
+        #cbdff8,  /* pale blue */
+        #96c1e7,  /* faded steel blue */
+        #7aa1d8,  /* soft gray-blue */
+        #6091c3,  /* very light navy-gray */
+        #448dd1   /* gentle bluish-gray */
+    );
     background-size: 800% 800%;
-    animation: deepFlow 20s ease infinite;
-    color: white; /* Optional: Makes text readable on darker background */
+    animation: deepFlow 1s ease infinite;
+    color: #1a1a1a; /* Dark text for readability */
     min-height: 100vh;
 }
 
@@ -29,6 +35,9 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+
+
 
 
 
